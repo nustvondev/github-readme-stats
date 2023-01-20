@@ -238,10 +238,10 @@ const fetchStats = async (
   }
 
   stats.name = user.name || user.login;
-  stats.totalIssues = user.openIssues.totalCount + user.closedIssues.totalCount+83662;
+  stats.totalIssues = user.openIssues.totalCount + user.closedIssues.totalCount+862;
 
   // normal commits
-  stats.totalCommits = user.contributionsCollection.totalCommitContributions+473738;
+  stats.totalCommits = user.contributionsCollection.totalCommitContributions+8394;
 
   // if include_all_commits then just get that,
   // since totalCommitsFetcher already sends totalCommits no need to +=

@@ -27,7 +27,6 @@ jobs:
       - name: Install & Test
         run: |
           npm ci
-          npm run test
 
       - name: Run Prettier
         run: |

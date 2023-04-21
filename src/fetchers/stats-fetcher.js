@@ -238,10 +238,10 @@ const fetchStats = async (
   }
 
   stats.name = user.name || user.login;
-  stats.totalIssues = user.openIssues.totalCount + user.closedIssues.totalCount+862;
+  stats.totalIssues = user.openIssues.totalCount + user.closedIssues.totalCount;
 
   // normal commits
-  stats.totalCommits = user.contributionsCollection.totalCommitContributions+89283;
+  stats.totalCommits = user.contributionsCollection.totalCommitContributions;
 
   // if include_all_commits then just get that,
   // since totalCommitsFetcher already sends totalCommits no need to +=
@@ -256,7 +256,7 @@ const fetchStats = async (
   }
 
   stats.totalPRs = user.pullRequests.totalCount+274;
-  stats.contributedTo = user.repositoriesContributedTo.totalCount+382;
+  stats.contributedTo = user.repositoriesContributedTo.totalCount;
 
   // Retrieve stars while filtering out repositories to be hidden
   stats.totalStars = await totalStarsFetcher(username, repoToHide);

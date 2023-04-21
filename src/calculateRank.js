@@ -97,7 +97,7 @@ const calculateRank = ({
     return "B+";
   })();
 
-  return { level, score: 95.5 };
+  return { level, score: normalizedScore };
 };
 
 export { calculateRank };
